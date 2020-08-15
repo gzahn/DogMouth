@@ -1,0 +1,54 @@
+[1] "Richness"
+
+Call:
+glm(formula = Richness ~ Pre_or_PostDentalChew, data = meta2)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-631.33  -130.21    30.79   178.17   372.29  
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                709.71      39.76  17.850   <2e-16 ***
+Pre_or_PostDentalChewPre    86.62      55.37   1.564    0.123    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 49008.32)
+
+    Null deviance: 3158457  on 63  degrees of freedom
+Residual deviance: 3038516  on 62  degrees of freedom
+AIC: 876.78
+
+Number of Fisher Scoring iterations: 2
+
+                      Df  Sum Sq Mean Sq F value Pr(>F)
+Pre_or_PostDentalChew  1  119941  119941   2.447  0.123
+Residuals             62 3038516   49008               
+[1] "Shannon"
+
+Call:
+glm(formula = Shannon ~ Pre_or_PostDentalChew, data = meta2)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3565  -0.2625   0.1101   0.3580   0.7083  
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               5.83341    0.08778  66.453   <2e-16 ***
+Pre_or_PostDentalChewPre  0.16737    0.12225   1.369    0.176    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.2388819)
+
+    Null deviance: 15.258  on 63  degrees of freedom
+Residual deviance: 14.811  on 62  degrees of freedom
+AIC: 93.958
+
+Number of Fisher Scoring iterations: 2
+
+                      Df Sum Sq Mean Sq F value Pr(>F)
+Pre_or_PostDentalChew  1  0.448  0.4478   1.874  0.176
+Residuals             62 14.811  0.2389               

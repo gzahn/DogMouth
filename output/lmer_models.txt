@@ -1,0 +1,80 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: Shannon ~ Treatment * RegularChewUse + (1 | Subject)
+   Data: meta3
+
+REML criterion at convergence: 85.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.7465 -0.5924  0.1962  0.6543  1.2940 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ Subject  (Intercept) 0.01854  0.1362  
+ Residual             0.19989  0.4471  
+Number of obs: 64, groups:  Subject, 38
+
+Fixed effects:
+                               Estimate Std. Error t value
+(Intercept)                     5.86119    0.09160  63.988
+TreatmentPre                    0.12488    0.12273   1.017
+RegularChewUseY                 0.11656    0.25085   0.465
+RegularChewUseYes              -1.32115    0.47626  -2.774
+TreatmentPre:RegularChewUseY    0.07524    0.34231   0.220
+TreatmentPre:RegularChewUseYes  0.87345    0.64408   1.356
+
+Correlation of Fixed Effects:
+                     (Intr) TrtmnP ReglrChwUsY RglrChwUsYs TretmntPr:RglrChwUsY
+TreatmentPr          -0.696                                                    
+ReglrChwUsY          -0.365  0.254                                             
+RglrChwUsYs          -0.192  0.134  0.070                                      
+TretmntPr:RglrChwUsY  0.250 -0.359 -0.686      -0.048                          
+TrtmntPr:RglrChwUsYs  0.133 -0.191 -0.048      -0.677       0.068              
+Analysis of Deviance Table (Type II Wald F tests with Kenward-Roger df)
+
+Response: Shannon
+                              F Df Df.res  Pr(>F)  
+Treatment                2.0449  1 31.169 0.16267  
+RegularChewUse           3.6933  2 29.877 0.03687 *
+Treatment:RegularChewUse 0.9266  2 28.903 0.40735  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by REML ['lmerMod']
+Formula: Richness ~ Treatment * RegularChewUse + (1 | Subject)
+   Data: meta3
+
+REML criterion at convergence: 802.4
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.66372 -0.51229  0.09139  0.69147  1.51313 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ Subject  (Intercept)  4026     63.45  
+ Residual             46865    216.48  
+Number of obs: 64, groups:  Subject, 38
+
+Fixed effects:
+                               Estimate Std. Error t value
+(Intercept)                     718.325     44.217  16.245
+TreatmentPre                     72.868     59.396   1.227
+RegularChewUseY                   3.123    121.091   0.026
+RegularChewUseYes              -267.325    229.884  -1.163
+TreatmentPre:RegularChewUseY     44.653    165.631   0.270
+TreatmentPre:RegularChewUseYes  180.132    311.863   0.578
+
+Correlation of Fixed Effects:
+                     (Intr) TrtmnP ReglrChwUsY RglrChwUsYs TretmntPr:RglrChwUsY
+TreatmentPr          -0.698                                                    
+ReglrChwUsY          -0.365  0.255                                             
+RglrChwUsYs          -0.192  0.134  0.070                                      
+TretmntPr:RglrChwUsY  0.250 -0.359 -0.687      -0.048                          
+TrtmntPr:RglrChwUsYs  0.133 -0.190 -0.049      -0.679       0.068              
+Analysis of Deviance Table (Type II Wald F tests with Kenward-Roger df)
+
+Response: Richness
+                              F Df Df.res Pr(>F)
+Treatment                2.3484  1 31.207 0.1355
+RegularChewUse           0.6157  2 29.844 0.5470
+Treatment:RegularChewUse 0.1927  2 28.936 0.8258
